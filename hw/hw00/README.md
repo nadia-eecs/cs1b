@@ -1,5 +1,10 @@
 # HW00: Review of CS1A Functions
 
+# Firstname Lastname
+
+TODO - Update your name in this readme
+TODO - Add a badge from travis CI here
+
 ## Problem Statement
 
 The following formula gives the distance between two points $(x_1, y_1)$ and $(x_2, y_2)$ in the Cartesian plane:
