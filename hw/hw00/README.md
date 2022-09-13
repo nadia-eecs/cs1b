@@ -1,6 +1,6 @@
 # HW00: Review of CS1A Functions
 
-# Firstname Lastname
+## Firstname Lastname
 
 TODO - Update your name in this readme
 TODO - Add a badge from travis CI here
