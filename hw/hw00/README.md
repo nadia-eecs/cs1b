@@ -12,5 +12,5 @@ Given the center and a point on the circle, you can use this formula to find the
  -  `radius`: This function takes as its parameters four numbers that represent the center and a point on the circle, calls the function `distance` to find the radius of the circle, and returns the circle's radius.
 - `circumference`: This function takes as its parameter a number that represents the radius of the circle and returns the circle's circumference. (If $r$ is the radius the circumference is $2\pi r$.)
 - `area`: Thsi function takes as its parameter a number that represents the radius of the circle and returns the circles are. (If $r$ is the radius, the area area is $\pi r^2$.)
-- Assume that $\pi = 3.1416
+- Assume that $\pi = 3.1416$
 
