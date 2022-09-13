@@ -34,11 +34,17 @@ This will compile your `hw00.cpp` and will save and executable as `hw00` in the 
 Use the command `script` to capture your interaction compiling and running the program as shown:
 
 `script hw00.scr`
+
 `date`
+
 `ls -l`
+
 `g++ hw00.cpp -o hw00`
+
 `./hw00`
+
 `ls -l`
+
 `exit`
 
 ## Commit, commit, commit!
