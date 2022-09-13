@@ -14,3 +14,29 @@ Given the center and a point on the circle, you can use this formula to find the
 - `area`: Thsi function takes as its parameter a number that represents the radius of the circle and returns the circles are. (If $r$ is the radius, the area area is $\pi r^2$.)
 - Assume that $\pi = 3.1416$
 
+## Files to work on
+- `src/circle.h` and implement the necessary functions therein
+- `src/hw00.cpp` to implement your driver code to test during development
+
+## Compiling and Running the Program
+To run the program type the following shell command: 
+
+`g++ hw00.cpp -o hw00`
+
+This will compile your `hw00.cpp` and will save and executable as `hw00` in the same directory. Notice that `hw00.cpp` will depend on the function definitions in `circle.h` which you should not forget to `#include "circle.h"` to test your code. Use `hw00.cpp` as a driver to test edge cases.
+
+## Script Generation
+Use the command `script` to capture your interaction compiling and running the program as shown:
+
+`script hw00.scr`
+`date`
+`ls -l`
+`g++ hw00.cpp -o hw00`
+`./hw00`
+`ls -l`
+`exit`
+
+## Commit, commit, commit!
+Commit all changes as you develop the code in your individual private repo. Please provide descriptive commit messages and push from local to your repository. If you do not stage, commit, and push git classroom will not receive your code at all.
+
+
