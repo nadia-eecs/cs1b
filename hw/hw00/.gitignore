@@ -1,5 +1,5 @@
 # ignore solution files
-/src/solution
+/src/solution.h
 
 # C extensions
 *.so
