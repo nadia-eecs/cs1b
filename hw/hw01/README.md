@@ -38,6 +38,8 @@ Use the command `script` to capture your interaction compiling and running the p
 
 `date`
 
+`pwd`
+
 `ls -l`
 
 `g++ hw01.cpp -o hw01`
