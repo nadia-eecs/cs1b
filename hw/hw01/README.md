@@ -1,4 +1,4 @@
-# HW00: Review of CS1A Functions
+# HW01: Review of CS1A Functions
 
 ## Firstname Lastname
 
@@ -21,27 +21,27 @@ Given the center and a point on the circle, you can use this formula to find the
 
 ## Files to work on
 - `src/circle.h` and implement the necessary functions therein
-- `src/hw00.cpp` to implement your driver code to test during development
+- `src/hw01.cpp` to implement your driver code to test during development
 
 ## Compiling and Running the Program
 To run the program type the following shell command: 
 
-`g++ hw00.cpp -o hw00`
+`g++ hw01.cpp -o hw01`
 
-This will compile your `hw00.cpp` and will save and executable as `hw00` in the same directory. Notice that `hw00.cpp` will depend on the function definitions in `circle.h` which you should not forget to `#include "circle.h"` to test your code. Use `hw00.cpp` as a driver to test edge cases.
+This will compile your `hw01.cpp` and will save and executable as `hw01` in the same directory. Notice that `hw01.cpp` will depend on the function definitions in `circle.h` which you should not forget to `#include "circle.h"` to test your code. Use `hw01.cpp` as a driver to test edge cases.
 
 ## Script Generation
 Use the command `script` to capture your interaction compiling and running the program as shown:
 
-`script hw00.scr`
+`script hw01.scr`
 
 `date`
 
 `ls -l`
 
-`g++ hw00.cpp -o hw00`
+`g++ hw01.cpp -o hw01`
 
-`./hw00`
+`./hw01`
 
 `ls -l`
 
