@@ -20,7 +20,8 @@ Given the center and a point on the circle, you can use this formula to find the
 - Assume that $\pi = 3.1416$
 
 ## Files to work on
-- `src/circle.h` and implement the necessary functions therein
+- `src/circle.h` and implement the necessary function headers therein
+- `src/circle.hpp` and implement the necessary function definitions therein
 - `src/hw01.cpp` to implement your driver code to test during development
 
 ## Compiling and Running the Program
