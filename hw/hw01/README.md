@@ -28,6 +28,7 @@ Given the center and a point on the circle, you can use this formula to find the
 To run the program first compile the function definition file `circle.cpp` and save the output executable as `circle.o`. Then you must link the file to the driver `hw01.cpp` main function that you use to test whether your code works by typing the following shell command: 
 
 `g++ -c circle.cpp -o circle.o`
+
 `g++ hw01.cpp -o hw01 circle.o`
 
 This will compile your `hw01.cpp` and will save and executable as `hw01` in the same directory. Notice that `hw01.cpp` will depend on the function definitions in `circle.h` which you should not forget to `#include "circle.h"` to test your code. Use `hw01.cpp` as a driver to test edge cases.
