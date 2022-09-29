@@ -1,6 +1,6 @@
 # ignore solution files
 /src/solution.h
-/src/circle.cpp
+/src/solution
 # C extensions
 *.so
 

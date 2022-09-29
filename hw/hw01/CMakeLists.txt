@@ -19,3 +19,5 @@ include_directories(src)
 
 add_subdirectory(src)
 add_subdirectory(test)
+
+target_link_libraries(hw01_run hw01_library)

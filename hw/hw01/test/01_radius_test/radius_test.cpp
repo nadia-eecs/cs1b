@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "circle.hpp"
+#include "circle.h"
 
 using namespace std;
 
