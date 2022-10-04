@@ -3,6 +3,7 @@
 ## Firstname Lastname
 
 TODO - Update your name in this readme
+
 TODO - Add a badge from travis CI here
 
 ## Problem Statement
@@ -30,14 +31,12 @@ c_{ik}=a_{i1}b_{1k}+a_{i2}b_{2k}+ \dotso + a_{in}b_{nk}
 ### Determinant
 A square matrix is a matrix with the same number of rows as the number of columns:
 
-$$\[
-\begin{bmatrix}
+$$\begin{bmatrix}
  a_{00} & a_{01} & a_{02}\\
  a_{10} & a_{11} & a_{12}\\
  a_{20} & a_{21} & a_{22}\\
 % \hdotsfor{5} \\
-\end{bmatrix}
-\]$$
+\end{bmatrix}$$
 
 The _determinant_ is a useful value that can be computed from the elements of a _square matrix_. The determinant of a matrix $A$ is denoted $det(A)$, $det A$, or $|A|$. For a $3\times 3$ matrix, the formula to compute its determinant is:
 
