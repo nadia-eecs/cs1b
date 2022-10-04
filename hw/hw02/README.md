@@ -39,13 +39,13 @@ $$\[
 \end{bmatrix}
 \]$$
 
-The determinant is a useful value that can be computed from the elements of a _square matrix_. The determinant of a matrix $A$ is denoted $det(A)$, $det A$, or $|A|$. For a $3\times 3$ matrix, the formula to compute its determinant is:
+The _determinant_ is a useful value that can be computed from the elements of a _square matrix_. The determinant of a matrix $A$ is denoted $det(A)$, $det A$, or $|A|$. For a $3\times 3$ matrix, the formula to compute its determinant is:
 
 $$det(A) = a_{00}\cdot(a_{11}\cdot a_{22} - a_{12}\cdot a_{21}) - 
           a_{01}\cdot(a_{10}\cdot a_{22} - a_{12}\cdot a_{20}) + 
           a_{02}\cdot(a_{10}\cdot a_{21} - a_{11}\cdot a_{20})$$
 
-Write a program that reads two matrices from a file input and populates corresponding array variables.  Use loop(s) (repetition)
+Write a program that reads two matrices from a file input and populates corresponding _array_ variables.  Use loop(s) (repetition)
 to assign each element.  Write functions to compute the addition,
 subtraction, and multiplication of the matrices, and the determinant
 of the matrix multiplication result. Prompt the user for the desired
@@ -53,3 +53,34 @@ operation and inform if dimensions are not compatible for such operation.
 Output results to the screen.  Each operation should be implemented
 in a separate function.  Each function should be in its own file. The
 header file should have the necessary function prototypes.  Configure a _Makefile_ to compile the project.
+
+## Script Generation
+Use the command `script` to capture your interaction compiling and runnign the program, including all operations, as shown below:
+
+`script hw02.scr`
+
+`date`
+
+`ls -l`
+
+`make all`
+
+`ls -l`
+
+`./hw02`
+
+`exit`
+
+`make tar`
+
+Save all files into the `hw02/src`.
+
+## NOTE
+- It is required that you add your name and Travis CI badge to your readme.
+- Check the logs from Travis to verify the correctness of your program.
+- The Initial code will not necessarily compile. You will have to write the necessary code.
+- Commit all changes as you develop the code in your individual private repo. Please provide descriptive commit messages and push from local to your repository. If you do not stage, commit, and push git classroom will not receive your code at all.
+- Make sure your last push is before the deadline. Your last push will be considered as your final submission.
+- There is no partial credit for code that does not compile
+- If you need to be considered for partial grade for any reason(failing tests on travis,etc). Then message the staff on canvas before the deadline. Late email requests may not be considered.
+
