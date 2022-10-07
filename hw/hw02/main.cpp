@@ -2,7 +2,9 @@
 #include "src/matrix.h"
 using namespace std;
 
-int main(int argv, char *argc[]) {
+int main() {
+
+	cout << "This is the driver code to make sure my matrix functions work!\n";
 
 	return 0;
 
