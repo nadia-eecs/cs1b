@@ -8,7 +8,10 @@ TODO - Add a badge from travis CI here
 
 ## Problem Statement
 
-Write a program that reads two matrices from a file and populates
+Write a program that reads two matrices of type `double` from a file with the format given in `input.txt`
+The first integer represents the number of rows.
+The second integer represents the number of columns.
+The third line and beyond can contain decimal values that are written in the format of the matrix it represents. The file then repeats the same format for the second matrix.
 
 ### Addition and Subtraction
 
@@ -28,8 +31,11 @@ $$\begin{equation*}
 c_{ik}=a_{i1}b_{1k}+a_{i2}b_{2k}+ \dotso + a_{in}b_{nk}
 \end{equation*}$$
 
-### Determinant
-A square matrix is a matrix with the same number of rows as the number of columns:
+### Transpose
+
+Given a 2D integer array matrix, return the transpose of matrix.
+
+The transpose of a matrix is the matrix flipped over its main diagonal, switching the matrix's row and column indices.
 
 $$\begin{bmatrix}
  a_{00} & a_{01} & a_{02}\\
@@ -38,12 +44,16 @@ $$\begin{bmatrix}
 % \hdotsfor{5} \\
 \end{bmatrix}$$
 
-The _determinant_ is a useful value that can be computed from the elements of a _square matrix_. The determinant of a matrix $A$ is denoted $det(A)$, $det A$, or $|A|$. For a $3\times 3$ matrix, the formula to compute its determinant is:
+becomes:
 
-$$det(A) = a_{00}\cdot(a_{11}\cdot a_{22} - a_{12}\cdot a_{21}) - 
-          a_{01}\cdot(a_{10}\cdot a_{22} - a_{12}\cdot a_{20}) + 
-          a_{02}\cdot(a_{10}\cdot a_{21} - a_{11}\cdot a_{20})$$
+$$\begin{bmatrix}
+ a_{00} & a_{10} & a_{20}\\
+ a_{01} & a_{11} & a_{21}\\
+ a_{02} & a_{12} & a_{22}\\
+% \hdotsfor{5} \\
+\end{bmatrix}$$
 
+## Assignment Requirements
 Write a program that reads two matrices from a file input and populates corresponding _array_ variables.  Use loop(s) (repetition)
 to assign each element.  Write functions to compute the addition,
 subtraction, and multiplication of the matrices, and the determinant
