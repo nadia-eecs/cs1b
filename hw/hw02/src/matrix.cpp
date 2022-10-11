@@ -1,6 +1,6 @@
 #include "matrix.h"
 
-void fileIO(string filename, double A[][n1], int m1, double B[][n2], int m2) {
+void fileIO(string filename, double A[][n1], int& m1, double B[][n2], int& m2) {
 	ifstream ifile;
 	ifile.open(filename);
 	while (!ifile.eof()) {

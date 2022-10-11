@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-void fileIO(string filename, double A[][n1], int m1, double B[][n2], int m2);
+void fileIO(string filename, double A[][n1], int& m1, double B[][n2], int& m2);
 
 void matrixAddition(const double A[][n1], int m1, const double B[][n2], int m2, const double res[][n1]);
 
