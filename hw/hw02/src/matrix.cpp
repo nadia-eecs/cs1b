@@ -19,6 +19,16 @@ void fileIO(string filename, double A[][n1], int& m1, double B[][n2], int& m2) {
 	}
 }
 
+void print2DMatrix(const double M[][n1], int m1) {
+  if (m1 == 0 && n1 == 0) return;
+  for (int i = 0; i < m1; ++i) {
+    for (int j = 0; j < n1; ++j) {
+      cout << M[i][j] << " ";
+    }
+    cout << endl;
+  }
+}
+
 void matrixAddition(const double A[][n1], int m1, const double B[][n2], int m2, const double res[][n1]) {
   // matrix addition is defined if and only if A and B have the same size
   if (n1 != n2 && m1 != m2) return;
