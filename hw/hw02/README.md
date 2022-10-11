@@ -62,7 +62,7 @@ $$\begin{bmatrix}
   a_{10} & a_{11} & a_{12}\\
    a_{20} & a_{21} & a_{22}\\
    % \hdotsfor{5} \\
-   \end{bmatrix}
+   \end{bmatrix}$$
 
 The _determinant_ is a useful value that can be computed from the elements of a _square matrix_. The determinant of a matrix $A$ is denoted $det(A)$, $det A$, or $|A|$. 
 For a $3\times 3$ matrix, the formula to compute the  determinant is:
