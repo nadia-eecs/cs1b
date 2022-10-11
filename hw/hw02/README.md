@@ -33,7 +33,7 @@ c_{ik}=a_{i1}b_{1k}+a_{i2}b_{2k}+ \dotso + a_{in}b_{nk}
 
 ### Transpose
 
-Given a 2D integer array matrix, return the transpose of matrix.
+Given a 2D array matrix, return the transpose of matrix.
 
 The transpose of a matrix is the matrix flipped over its main diagonal, switching the matrix's row and column indices.
 
@@ -52,6 +52,22 @@ $$\begin{bmatrix}
  a_{02} & a_{12} & a_{22}\\
 % \hdotsfor{5} \\
 \end{bmatrix}$$
+
+## 3x3 Matrix  Determinant
+
+A square matrix is a matrix with the same number of rows as the number of columns:
+
+$$\begin{bmatrix}
+ a_{00} & a_{01} & a_{02}\\
+  a_{10} & a_{11} & a_{12}\\
+   a_{20} & a_{21} & a_{22}\\
+   % \hdotsfor{5} \\
+   \end{bmatrix}
+
+The _determinant_ is a useful value that can be computed from the elements of a _square matrix_. The determinant of a matrix $A$ is denoted $det(A)$, $det A$, or $|A|$. 
+For a $3\times 3$ matrix, the formula to compute the  determinant is:
+
+$$det(A) = a_{00}\cdot(a_{11}\cdot a_{22} - a_{12}\cdot a_{21}) - a_{01}\cdot(a_{10}\cdot a_{22} - a_{12}\cdot a_{20}) + a_{02}\cdot(a_{10}\cdot a_{21} - a_{11}\cdot a_{20})$$
 
 ## Assignment Requirements
 Write a program that reads two matrices from a file input and populates corresponding _array_ variables.  Use loop(s) (repetition)
