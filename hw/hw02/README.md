@@ -70,14 +70,21 @@ For a $3\times 3$ matrix, the formula to compute the  determinant is:
 $$det(A) = a_{00}\cdot(a_{11}\cdot a_{22} - a_{12}\cdot a_{21}) - a_{01}\cdot(a_{10}\cdot a_{22} - a_{12}\cdot a_{20}) + a_{02}\cdot(a_{10}\cdot a_{21} - a_{11}\cdot a_{20})$$
 
 ## Assignment Requirements
-Write a program that reads two matrices from a file input and populates corresponding _array_ variables.  Use loop(s) (repetition)
-to assign each element.  Write functions to compute the addition,
-subtraction, and multiplication of the matrices, and the determinant
-of the matrix multiplication result. Prompt the user for the desired
-operation and inform if dimensions are not compatible for such operation.
-Output results to the screen.  Each operation should be implemented
-in a separate function.  Each function should be in its own file. The
-header file should have the necessary function prototypes.  Configure a _Makefile_ to compile the project.
+
+Write a program that reads two matrices from a file input and populates corresponding _array_ variables.Use loop(s) (repetition) to assign each element.  Write functions to compute the addition,
+subtraction, and multiplication of the matrices, and the determinant of the matrix multiplication result.
+Prompt the user for the desired operation and inform if dimensions are not compatible for such operation.
+Output results to the screen.  Each operation should be implemented in a separate function.  Each function should be in its own file. The header file should have the necessary function prototypes.  Configure a _Makefile_ to compile the project.
+
+You are responsible for the following function defintions in `matrix.cpp`:
+
+- `void fileIO(string filename, double A[][n1], int& m1, double B[][n2], int& m2)`
+- `void matrixAddition(const double A[][n1], int m1, const double B[][n2], int m2, const double res[][n1])`
+- `void matrixSubtraction(double A[][n1], int m1, double B[][n2], res[][n1], double m2)`
+- `void matrixMultiplication(double A[][n1], int m1, double B[][n2], int m2, double res[][n2])`
+- `void matrixTranspose(double M[][n], int m, double res[][m])`
+- `double matrixDeterminant3D(double M[][n], int m)`
+- `void print2DMatrix(const double M[][n1], int m1)`
 
 ## Script Generation
 Use the command `script` to capture your interaction compiling and runnign the program, including all operations, as shown below:

@@ -16,4 +16,6 @@ void matrixTranspose(double M[][n], int m, double res[][m]);
 
 double matrixDeterminant3D(double M[][n], int m);
 
+void print2DMatrix(const double M[][n1], int m1);
+
 #endif
