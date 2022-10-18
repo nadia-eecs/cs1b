@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.16)
 project(hw02)
 
 ## Check for Windows ##
-if (WIN32) # true if wondows (32 and 64 bit)
+if (WIN32) # true if windows (32 and 64 bit)
 	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std:gnu++0x")
 else()
 	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
@@ -18,6 +18,6 @@ add_executable(hw02_run ${SOURCE_FILES})
 include_directories(src)
 
 add_subdirectory(src)
-add_subdirectory(test)
+add_subdirectory(tests)
 
 target_link_libraries(hw02_run hw02_library)
