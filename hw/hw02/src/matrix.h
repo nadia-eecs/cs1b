@@ -1,21 +1,24 @@
 #ifndef _MATRIX_H
 #define _MATRIX_H
 #include <fstream>
+#include <iostream>
 #include <string>
+#define AR_CAP 50
+
 using namespace std;
 
-void fileIO(string filename, double A[][n1], int& m1, double B[][n2], int& m2);
+void fileIO(string filename, int A[][AR_CAP], int& n1, int& m1, int B[][AR_CAP], int& n2, int& m2);
 
-void matrixAddition(const double A[][n1], int m1, const double B[][n2], int m2, const double res[][n1]);
+void matrixAddition(const int A[][AR_CAP], int n1, int m1, const int B[][AR_CAP], int n2, int m2, int res[][AR_CAP]);
 
-void matrixSubtraction(double A[][n1], int m1, double B[][n2], res[][n1], double m2);
+void matrixSubtraction(int A[][AR_CAP], int n1, int m1, int B[][AR_CAP], int n2, int m2, int res[][AR_CAP]);
 
-void matrixMultiplication(double A[][n1], int m1, double B[][n2], int m2, double res[][n2]);
+void matrixMultiplication(int A[][AR_CAP], int n1, int m1, int B[][AR_CAP], int n2, int m2, int res[][AR_CAP]);
 
-void matrixTranspose(double M[][n], int m, double res[][m]); 
+void matrixTranspose(int M[][AR_CAP], int n, int m, int res[][AR_CAP]); 
 
-double matrixDeterminant3D(double M[][n], int m);
+double matrixDeterminant3D(int M[][AR_CAP], int n, int m);
 
-void print2DMatrix(const double M[][n1], int m1);
+void print2DMatrix(const int M[][AR_CAP], int n1, int m1);
 
 #endif

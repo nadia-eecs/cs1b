@@ -8,10 +8,10 @@ TODO - Add a badge from travis CI here
 
 ## Problem Statement
 
-Write a program that reads two matrices of type `double` from a file with the format given in `input.txt`
+Write a program that reads two matrices of type `int` from a file with the format given in `input.txt`
 The first integer represents the number of rows.
 The second integer represents the number of columns.
-The third line and beyond can contain decimal values that are written in the format of the matrix it represents. The file then repeats the same format for the second matrix.
+The third line and beyond can contain values that are written in the format of the matrix it represents. The file then repeats the same format for the second matrix.
 
 ### Addition and Subtraction
 
@@ -73,21 +73,29 @@ $$det(A) = a_{00}\cdot(a_{11}\cdot a_{22} - a_{12}\cdot a_{21}) - a_{01}\cdot(a_
 
 Write a program that reads two matrices from a file input and populates corresponding _array_ variables.Use loop(s) (repetition) to assign each element.  Write functions to compute the addition,
 subtraction, and multiplication of the matrices, and the determinant of the matrix multiplication result.
-Prompt the user for the desired operation and inform if dimensions are not compatible for such operation.
-Output results to the screen.  Each operation should be implemented in a separate function.  Each function should be in its own file. The header file should have the necessary function prototypes.  Configure a _Makefile_ to compile the project.
+Prompt the user for file (recall it should include the path). Error check in each function to make sure that the matrix dimensions are correct especially when performing multiplication of matrices. 
 
-You are responsible for the following function defintions in `matrix.cpp`:
+Output results to the screen.  Each operation should be implemented in a separate function in `matrix.cpp`. The header file should have the necessary function prototypes.  Configure a _Makefile_ to compile the project.
 
-- `void fileIO(string filename, double A[][n1], int& m1, double B[][n2], int& m2)`
-- `void matrixAddition(const double A[][n1], int m1, const double B[][n2], int m2, const double res[][n1])`
-- `void matrixSubtraction(double A[][n1], int m1, double B[][n2], res[][n1], double m2)`
-- `void matrixMultiplication(double A[][n1], int m1, double B[][n2], int m2, double res[][n2])`
-- `void matrixTranspose(double M[][n], int m, double res[][m])`
-- `double matrixDeterminant3D(double M[][n], int m)`
-- `void print2DMatrix(const double M[][n1], int m1)`
+You are responsible for the following function definitions in `matrix.cpp`:
+- `void fileIO(string filename, int A[][AR_CAP], int& n1, int& m1, int B[][AR_CAP], int& n2, int& m2)`
+
+- `void matrixAddition(const int A[][AR_CAP], int n1, int m1, const int B[][AR_CAP], int n2, int m2, int res[][AR_CAP])`
+
+- `void matrixSubtraction(int A[][AR_CAP], int n1, int m1, int B[][AR_CAP], int n2, int m2, int res[][AR_CAP])`
+
+- `void matrixMultiplication(int A[][AR_CAP], int n1, int m1, int B[][AR_CAP], int n2, int m2, int res[][AR_CAP])`
+
+- `void matrixTranspose(int M[][AR_CAP], int n, int m, int res[][AR_CAP])`
+
+- `double matrixDeterminant3D(int M[][AR_CAP], int n, int m)`
+
+- `void print2DMatrix(const int M[][AR_CAP], int n1, int m1)`
+
+You may predefine `AR_CAP` with a size of 50 to statically allocate memory to the 2D matrix initially. Note that the resultant matrix to the `matrixMultiplication` function must be initialized to zero prior to the function call. 
 
 ## Script Generation
-Use the command `script` to capture your interaction compiling and runnign the program, including all operations, as shown below:
+Use the command `script` to capture your interaction compiling and running the program, including all operations, as shown below:
 
 `script hw02.scr`
 
@@ -113,6 +121,6 @@ Save all files into the `hw02/src`.
 - The Initial code will not necessarily compile. You will have to write the necessary code.
 - Commit all changes as you develop the code in your individual private repo. Please provide descriptive commit messages and push from local to your repository. If you do not stage, commit, and push git classroom will not receive your code at all.
 - Make sure your last push is before the deadline. Your last push will be considered as your final submission.
-- There is no partial credit for code that does not compile
+- There is no partial credit for code that does not compile.
 - If you need to be considered for partial grade for any reason(failing tests on travis,etc). Then message the staff on canvas before the deadline. Late email requests may not be considered.
 
