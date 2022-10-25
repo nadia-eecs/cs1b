@@ -37,11 +37,10 @@ Menu - Select:
 1. Add a record
 2. Delete a record
 <ol type="a">
- <li>Select record to delete using artist_id<li>
- <li>Select a record to delete using artist_name<li>
-</ol>
-3. Display database contents on the screen
- * a.) Select record to display using artist_id
+<li>Select record to delete using artist_id<li>
+<li>Select a record to delete using artist_name<li>
+3. Display database contents on the screen3. Display database contents on the screen3. Display database contents on the screen
+* a.) Select record to display using artist_id
  * b.) Select record to display using artist_name
  * c.) Display all artist_names by selected genre.
  * d.) Display all records
