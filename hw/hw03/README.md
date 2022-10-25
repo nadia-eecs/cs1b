@@ -36,8 +36,10 @@ The database is from a text file, `spotify_daily_charts_artists_sample.csv`, whi
 Menu - Select:
 1. Add a record
 2. Delete a record
- * Select record to delete using artist_id
- * b.) Select a record to delete using artist_name
+<ol type="a">
+ <li>Select record to delete using artist_id<li>
+ <li>Select a record to delete using artist_name<li>
+</ol>
 3. Display database contents on the screen
  * a.) Select record to display using artist_id
  * b.) Select record to display using artist_name
