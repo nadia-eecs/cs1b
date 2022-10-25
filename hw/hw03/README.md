@@ -36,27 +36,29 @@ The database is from a text file, `spotify_daily_charts_artists_sample.csv`, whi
 Menu - Select:
 1. Add a record
 2. Delete a record
- -  a.) Select record to delete using artist_id
- -  b.) Select a record to delete using artist_name
+ - a.) Select record to delete using artist_id
+ - b.) Select a record to delete using artist_name
 3. Display database contents on the screen
-  a.) Select record to display using artist_id
-  b.) Select record to display using artist_name
-  c.) Display all artist_names by selected genre.
-  d.) Display all records
+ - a.) Select record to display using artist_id
+ - b.) Select record to display using artist_name
+ - c.) Display all artist_names by selected genre.
+ - d.) Display all records
 4. Sort database by total_followers
-  a.) Display top 5 most followed artists
-  b.) Display 5 least followed artists
+ - a.) Display top 5 most followed artists
+ - b.) Display 5 least followed artists
 5. Sort database by popularity
-  a.) Display top 5 popular artists
-  b.) Display least 5 popular artists
+ - a.) Display top 5 popular artists
+ - b.) Display least 5 popular artists
 6. Save and Exit
 
 Use the following format for the input/outputfile (Note that data follows after first row which contains headings for the `csv`):
 
 artist_id, artist_name, total_followers, genres, popularity
-0du5cEVh5yTK9QJze8zA0C,	Bruno Mars,	43236735,	['dance pop', 'pop'],	87
-4IWBUUAFIplrNtaOHcJPRM,	James Arthur,	10293374,	['pop', 'talent show', 'uk pop'],	80
-69GGBxA162lTqCwzJG5jLp,	The Chainsmokers,	19465938,	['dance pop', 'edm', 'electropop', 'pop', 'pop dance', 'tropical house'],	80
 
+0du5cEVh5yTK9QJze8zA0C,	Bruno Mars,	43236735,	['dance pop', 'pop'],	87
+
+4IWBUUAFIplrNtaOHcJPRM,	James Arthur,	10293374,	['pop', 'talent show', 'uk pop'],	80
+
+69GGBxA162lTqCwzJG5jLp,	The Chainsmokers,	19465938,	['dance pop', 'edm', 'electropop', 'pop', 'pop dance', 'tropical house'],	80
 
 For ex
