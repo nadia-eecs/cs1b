@@ -53,11 +53,8 @@ Menu - Select:
 
 Use the following format for the input/outputfile (Note that data follows after first row which contains headings for the `csv`):
 ```
-__artist_id, artist_name, total_followers, genres, popularity__
-
+artist_id, artist_name, total_followers, genres, popularity
 0du5cEVh5yTK9QJze8zA0C,	Bruno Mars,	43236735,	['dance pop', 'pop'],	87
-
 4IWBUUAFIplrNtaOHcJPRM,	James Arthur,	10293374,	['pop', 'talent show', 'uk pop'],	80
-
 69GGBxA162lTqCwzJG5jLp,	The Chainsmokers,	19465938,	['dance pop', 'edm', 'electropop', 'pop', 'pop dance', 'tropical house'],	80
 ```
