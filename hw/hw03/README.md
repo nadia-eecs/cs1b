@@ -31,7 +31,7 @@ struct artist {
   int popularity
 };
 ```
-The database is from a text file, `spotify_daily_charts_artists_sample.csv`, which is used for input and output. Create a menu for user interface with options for adding/deleting a record to/from the database, sorting records, and displaying a record or all records on the screen.
+The database is from a text file organized in ascending order by , `spotify_daily_charts_artists_sample.csv`, which is used for input and output. Create a menu for user interface with options for adding/deleting a record to/from the database, sorting records, and displaying a record or all records on the screen.
 
 Menu - Select:
 1. Add a record
@@ -43,13 +43,10 @@ Menu - Select:
  * b.) Select record to display using artist_name
  * c.) Display all artist_names by selected genre.
  * d.) Display all records
-4. Sort database by total_followers
- * a.) Display top 5 most followed artists
- * b.) Display 5 least followed artists
-5. Sort database by popularity
+4. Traverse database by popularity
  * a.) Display top 5 popular artists
  * b.) Display least 5 popular artists
-6. Save and Exit
+5. Save and Exit
 
 Use the following format for the input/outputfile (Note that data follows after first row which contains headings for the `csv`):
 ```
