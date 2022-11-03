@@ -6,7 +6,7 @@ TODO - Update your name in this readme
 
 ## Problem Statement
 
-Write a program that will take the Spotify daily artist charts and construct a double linked list that will allow the user to interact with the database by removing entries by artist name and displaying contents of the list that are of interest.
+Write a program that will take the Spotify daily artist charts and construct a double linked list that will allow the user to interact with the database by finding entries by artist name and displaying contents of the list that are of interest.
 
 ## Struct Organization
 You should have a single header file that declares the following structs that will be used to organize your double linked list:
@@ -33,24 +33,24 @@ struct artist {
 };
 ```
 ## User Interface
-The database is from a text file organized in ascending order by popularity (from least to most), `spotify_daily_charts_artists_sample.csv`, which is used for input and output. Create a menu for user interface with options for adding/deleting a record to/from the database, searching, and displaying a record or all records on the screen.
+Create a menu for user interface with options for adding/deleting a record to/from the database, searching, and displaying a record or all records on the screen.
 
 Menu - Select:
 1. Add a record
+ * a.) Add a record to the beginning of the list
+ * b.) Add a record to the end of the list
+ * c.) Add an artist record before another artist record
+ * d.) Add an artist record after another artist record
 2. Delete a record
- * a.) Select record to delete using artist_id
+ * a.) Delete the first artist in the record
+ * b.) Delete the last artist in the record
  * b.) Select a record to delete using artist_name
 3. Display database contents on the screen
- * a.) Select record to display using artist_id
- * b.) Select record to display using artist_name
- * c.) Display all artist_names by selected genre.
- * d.) Display all records
-4. Traverse database by popularity
- * a.) Display top 5 popular artists
- * b.) Display least 5 popular artists
-5. Save and Exit
+ * a.) Select record to display using artist_name
+ * b.) Display all records
+4. Save and Exit
 
-## CSV File Read/Write Using C++
+## EXTRA CREDIT: CSV File Read/Write Using C++
 Use the following format for the input/outputfile (Note that data follows after first row which contains headings for the `csv`):
 ```
 artist_id, artist_name, total_followers, genres, popularity
