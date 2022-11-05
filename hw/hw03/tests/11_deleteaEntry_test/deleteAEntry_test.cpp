@@ -21,7 +21,7 @@ bool equalVectors(vector<T> a, vector<T> b) {
 }
 
 TEST(hw03test, deleteArtistEntryTest) {
-  ARTIST *a1 = nullptr;
+  ARTIST *a1 = nullptr, *a2 = nullptr;
   AENTRY *e1 = nullptr;
   string id = "0du5cEVh5yTK9QJze8zA0C";
   string name = "Bruno Mars";
@@ -31,9 +31,9 @@ TEST(hw03test, deleteArtistEntryTest) {
 
   a1 = newArtist(id, name, total_followers, genre_a, popularity);
   e1 = newArtistEntry(a1);
-  a1 = deleteArtistEntry(e1);
+  a2 = deleteArtistEntry(e1);
 
-  ASSERT_EQ(e1, nullptr) << "\nError in deletion of artist entry from linked list";
+  ASSERT_EQ(a1, a2) << "\nError in deletion of artist entry from linked list";
 
   if(HasFailure()) {
     cerr << "deletion of intermediate artistEntry pointing to artist struct of data has failed" << endl;

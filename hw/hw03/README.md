@@ -33,7 +33,7 @@ struct artist {
 };
 ```
 ## User Interface
-Create a menu for user interface with options for adding/deleting a record to/from the database, searching, and displaying a record or all records on the screen.
+Create a menu for user interface with options for adding/deleting a record to/from the database, searching, and displaying a record or all records on the screen. The menu driven code should be written in your user defined main function in src (separate from the sample driver code given in the main directory of hw03).
 
 Menu - Select:
 1. Add a record

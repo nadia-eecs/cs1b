@@ -50,7 +50,6 @@ TEST(hw03Test, deleteArtistListTest) {
   EXPECT_EQ(l->length, 4) << "\nExpect list length of 4 when 4 artist records are added to the artist list.";
 
   deleteArtistList(l);
-  ASSERT_EQ(l, nullptr) << "\nExpected nullptr from deletion of artist list.";
   if(HasFailure()) {
     cerr << "Artist linked list deletion has failed" << endl;
   } else {
