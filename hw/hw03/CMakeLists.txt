@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.16)
 
 ## Project's Name
-project(hw02)
+project(hw03)
 
 ## Check for Windows ##
 if (WIN32) # true if windows (32 and 64 bit)
