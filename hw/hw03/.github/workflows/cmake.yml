@@ -133,76 +133,28 @@ jobs:
           status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/00_artist_test/00_runHW03ArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/01_emptyArtistList_test/01_runHW03EmptyArtistListTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/02_aEntry_test/02_runHW03aEntryTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/03_prependArtist_test/03_runHW03PrependArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/04_appendArtist_test/04_runHW03AppendArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/05_insertArtist_test/05_runHW03insertArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/06_removeFirstArtist_test/06_runHW03removeFirstArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/07_removeLastArtist_test/07_runHW03removeLastArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/08_findArtistName_test/08_runHW03findArtistbyNameTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/09_removeArtistbyName_test/09_runHW03removeArtistbyNameTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/10_deleteArtist_test/10_runHW03DeleteArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/11_deleteaEntry_test/11_runHW03DeleteAEntryTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/12_deleteArtistList_test/12_runHW03DeleteArtistListTest"
           $cmd
           status=$?
@@ -215,76 +167,27 @@ jobs:
           status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/00_artist_test/00_runHW03ArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/01_emptyArtistList_test/01_runHW03EmptyArtistListTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/02_aEntry_test/02_runHW03aEntryTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/03_prependArtist_test/03_runHW03PrependArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/04_appendArtist_test/04_runHW03AppendArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/05_insertArtist_test/05_runHW03insertArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/06_removeFirstArtist_test/06_runHW03removeFirstArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/07_removeLastArtist_test/07_runHW03removeLastArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/08_findArtistName_test/08_runHW03findArtistbyNameTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/09_removeArtistbyName_test/09_runHW03removeArtistbyNameTest"
-          $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/10_deleteArtist_test/10_runHW03DeleteArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/11_deleteaEntry_test/11_runHW03DeleteAEntryTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/12_deleteArtistList_test/12_runHW03DeleteArtistListTest"
           $cmd
           status=$?
@@ -297,76 +200,28 @@ jobs:
           status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/00_artist_test/00_runHW03ArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/01_emptyArtistList_test/01_runHW03EmptyArtistListTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/02_aEntry_test/02_runHW03aEntryTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/03_prependArtist_test/03_runHW03PrependArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/04_appendArtist_test/04_runHW03AppendArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/05_insertArtist_test/05_runHW03insertArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/06_removeFirstArtist_test/06_runHW03removeFirstArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/07_removeLastArtist_test/07_runHW03removeLastArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/08_findArtistName_test/08_runHW03findArtistbyNameTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/09_removeArtistbyName_test/09_runHW03removeArtistbyNameTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/10_deleteArtist_test/10_runHW03DeleteArtistTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/11_deleteaEntry_test/11_runHW03DeleteAEntryTest"
           $cmd
-          status=$?
-          [ $status -eq 0 ] && exit 0 || exit 1
-        run: |
-          status=$?
           cmd="build/bin/${{ matrix.config.build_type }}/tests/12_deleteArtistList_test/12_runHW03DeleteArtistListTest"
           $cmd
           status=$?
