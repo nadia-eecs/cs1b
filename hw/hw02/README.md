@@ -29,8 +29,8 @@ Write a program that uses a random number generator to generate a two-digit posi
 - `src/post_process.h`
 - `src/post_process.cpp`
 - `src/hw02.cpp`
-- `src/Makefile
-- `src/hw02.scr
+- `src/Makefile`
+- `src/hw02.scr`
 
 ## Compiling and Running the Program
 To run the program first compile the function definition files `gen_number.cpp`, `print_menu.cpp`, and `post_process.cpp` and save the object files as `gen_number.o`, `print_menu.o`, and `post_process.o`. Then you must link the file to the driver `hw02.cpp` main function that you used to test whether your code works by typing the following shell commands:
