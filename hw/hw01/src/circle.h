@@ -1,1 +1,1 @@
-# Insert function declarations/prototypes here.
+// Put function header file here
