@@ -1,1 +1,1 @@
-// Place function definition source code here
+# Insert function definitions here
