@@ -1,89 +1,126 @@
-# HW03: Doubly Linked List Using Struct and Pointers (C-style)
+# HW02: Matrix Operations Series Using C++ Arrays and Loops
 
 ## Firstname Lastname
 
 TODO - Update your name in this readme
 
+TODO - Add a badge from travis CI here
+
 ## Problem Statement
 
-Write a program that will take the Spotify daily artist charts and construct a double linked list that will allow the user to interact with the database by finding entries by artist name and displaying contents of the list that are of interest.
+Write a program that reads two matrices of type `int` from a file with the format given in `input.txt`
+The first integer represents the number of rows.
+The second integer represents the number of columns.
+The third line and beyond can contain values that are written in the format of the matrix it represents. The file then repeats the same format for the second matrix.
 
-## Struct Organization
-You should have a single header file that declares the following structs that will be used to organize your double linked list:
-```c++
-struct alist {
-  int length;
-  aentry *first;
-  aentry *last;
-};
+### Addition and Subtraction
 
-struct aentry {
-  alist *list;
-  aentry *next;
-  aentry *prev;
-  aentry *artist;
-};
+Two matrices can be added or subtracted if they have the same size.
+Suppose $A = [a_{ij}]$ and $B = [b_{ij}]$ are two matrices of the size $m\times n$, in which $a_{ij}$ denotes the element of $A$ in the ith row and the jth column, and so on.  The sum and difference of $A$ and $B$ are given by:
 
-struct artist {
-  string artist_id;
-  string artist_name;
-  int total_followers;
-  string genres[AR_SIZE];
-  int popularity
-};
-```
-## User Interface
-Create a menu for user interface with options for adding/deleting a record to/from the database, searching, and displaying a record or all records on the screen. The menu driven code should be written in your user defined main function in src (separate from the sample driver code given in the main directory of hw03).
+$$\begin{align*}
+A+B&=[a_{ij} + b_{ij}]\\
+A-B&=[a_{ij} - b_{ij}]
+\end{align*}$$
 
-Menu - Select:
-1. Add a record
- * a.) Add a record to the beginning of the list
- * b.) Add a record to the end of the list
- * c.) Add an artist record before another artist record
- * d.) Add an artist record after another artist record
-2. Delete a record
- * a.) Delete the first artist in the record
- * b.) Delete the last artist in the record
- * b.) Select a record to delete using artist_name
-3. Display database contents on the screen
- * a.) Select record to display using artist_name
- * b.) Display all records
-4. Save and Exit
+### Multiplication
 
-## EXTRA CREDIT: CSV File Read/Write Using C++
-Use the following format for the input/outputfile (Note that data follows after first row which contains headings for the `csv`):
-```
-artist_id, artist_name, total_followers, genres, popularity
-0du5cEVh5yTK9QJze8zA0C, Bruno Mars, 43236735, ['dance pop', 'pop'], 87
-4IWBUUAFIplrNtaOHcJPRM, James Arthur, 10293374, ['pop', 'talent show', 'uk pop'], 80
-69GGBxA162lTqCwzJG5jLp, The Chainsmokers, 19465938, ['dance pop', 'edm', 'electropop', 'pop', 'pop dance', 'tropical house'], 80
-```
-For more information on how to manage CSV refer to this article from [geeksforgeeks](https://www.geeksforgeeks.org/csv-file-management-using-c/).
+The multiplication of $A$ and $B$ $(A\cdot B)$ is defined only if the number of columns of A is the same as the number of rows of B.  If A is of the size $m\times n$ and B is of the size $n\times t$, the $A\cdot B = C$ (represented by $[c_{ik}]$) is of the size $m\times t$ and the element $c_{ik}$ is given by the formula:
 
-## Note
-In order to receive full credit for this homework assignment, you must complete:
+$$\begin{equation*}
+c_{ik}=a_{i1}b_{1k}+a_{i2}b_{2k}+ \dotso + a_{in}b_{nk}
+\end{equation*}$$
 
- - `artist.cpp`
- - `artistList.cpp`
- - `Makefile`
- - `main_menu.cpp`
- - `hw03.scr`: script file showing valgrind on your executable code without memory leaks or errors.
+### Transpose
 
-While a `main.cpp` is provided to you in the `hw03` directory, this main function serves as a driver for you to quickly evaluate your code functions. This driver code is different than the menu driven code that is expected in the user interface section and should be expressed in your `main_menu.cpp`. Please work out of the directory `src`.
+Given a 2D array matrix, return the transpose of matrix.
 
-- Make sure your last push is before the deadline. Your last push will be considered as your final submission.
+The transpose of a matrix is the matrix flipped over its main diagonal, switching the matrix's row and column indices.
 
-- It is recommended that you add your name to your `README.MD`
+$$\begin{bmatrix}
+ a_{00} & a_{01} & a_{02}\\
+ a_{10} & a_{11} & a_{12}\\
+ a_{20} & a_{21} & a_{22}\\
+% \hdotsfor{5} \\
+\end{bmatrix}$$
+
+becomes:
+
+$$\begin{bmatrix}
+ a_{00} & a_{10} & a_{20}\\
+ a_{01} & a_{11} & a_{21}\\
+ a_{02} & a_{12} & a_{22}\\
+% \hdotsfor{5} \\
+\end{bmatrix}$$
+
+## 3x3 Matrix  Determinant
+
+A square matrix is a matrix with the same number of rows as the number of columns:
+
+$$\begin{bmatrix}
+ a_{00} & a_{01} & a_{02}\\
+  a_{10} & a_{11} & a_{12}\\
+   a_{20} & a_{21} & a_{22}\\
+   % \hdotsfor{5} \\
+   \end{bmatrix}$$
+
+The _determinant_ is a useful value that can be computed from the elements of a _square matrix_. The determinant of a matrix $A$ is denoted $det(A)$, $det A$, or $|A|$. 
+For a $3\times 3$ matrix, the formula to compute the  determinant is:
+
+$$det(A) = a_{00}\cdot(a_{11}\cdot a_{22} - a_{12}\cdot a_{21}) - a_{01}\cdot(a_{10}\cdot a_{22} - a_{12}\cdot a_{20}) + a_{02}\cdot(a_{10}\cdot a_{21} - a_{11}\cdot a_{20})$$
+
+## Assignment Requirements
+
+Write a program that reads two matrices from a file input and populates corresponding _array_ variables.Use loop(s) (repetition) to assign each element.  Write functions to compute the addition,
+subtraction, and multiplication of the matrices, and the determinant of the matrix multiplication result.
+Prompt the user for file (recall it should include the path). Error check in each function to make sure that the matrix dimensions are correct especially when performing multiplication of matrices. 
+
+Output results to the screen.  Each operation should be implemented in a separate function in `matrix.cpp`. The header file should have the necessary function prototypes.  Configure a _Makefile_ to compile the project.
+
+You are responsible for the following function definitions in `matrix.cpp`:
+- `void fileIO(string filename, int A[][AR_CAP], int& n1, int& m1, int B[][AR_CAP], int& n2, int& m2)`
+
+- `void matrixAddition(const int A[][AR_CAP], int n1, int m1, const int B[][AR_CAP], int n2, int m2, int res[][AR_CAP])`
+
+- `void matrixSubtraction(int A[][AR_CAP], int n1, int m1, int B[][AR_CAP], int n2, int m2, int res[][AR_CAP])`
+
+- `void matrixMultiplication(int A[][AR_CAP], int n1, int m1, int B[][AR_CAP], int n2, int m2, int res[][AR_CAP])`
+
+- `void matrixTranspose(int M[][AR_CAP], int n, int m, int res[][AR_CAP])`
+
+- `double matrixDeterminant3D(int M[][AR_CAP], int n, int m)`
+
+- `void print2DMatrix(const int M[][AR_CAP], int n1, int m1)`
+
+You may predefine `AR_CAP` with a size of 50 to statically allocate memory to the 2D matrix initially. Note that the resultant matrix to the `matrixMultiplication` function must be initialized to zero prior to the function call. 
 
 ## Script Generation
-Use the command `script` to capture your interaction compiling and running the program `main_menu.cpp` and its dependencies: 
+Use the command `script` to capture your interaction compiling and running the program, including all operations, as shown below:
 
-`script hw03.scr`
+`script hw02.scr`
+
+`date`
+
+`ls -l`
 
 `make all`
 
-`valgrind ./hw03`
+`ls -l`
+
+`./hw02`
 
 `exit`
 
-Save all files into `hw03/src`
+`make tar`
+
+Save all files into the `hw02/src`.
+
+## NOTE
+- It is required that you add your name and Travis CI badge to your readme.
+- Check the logs from Travis to verify the correctness of your program.
+- The Initial code will not necessarily compile. You will have to write the necessary code.
+- Commit all changes as you develop the code in your individual private repo. Please provide descriptive commit messages and push from local to your repository. If you do not stage, commit, and push git classroom will not receive your code at all.
+- Make sure your last push is before the deadline. Your last push will be considered as your final submission.
+- There is no partial credit for code that does not compile.
+- If you need to be considered for partial grade for any reason(failing tests on travis,etc). Then message the staff on canvas before the deadline. Late email requests may not be considered.
+

@@ -1,0 +1,17 @@
+project(hw03_tests)
+
+add_subdirectory(lib/gtest-1.7.0)
+add_subdirectory(00_artist_test)
+add_subdirectory(01_emptyArtistList_test)
+add_subdirectory(02_aEntry_test)
+add_subdirectory(03_prependArtist_test)
+add_subdirectory(04_appendArtist_test)
+add_subdirectory(05_insertArtist_test)
+add_subdirectory(06_removeFirstArtist_test)
+add_subdirectory(07_removeLastArtist_test)
+add_subdirectory(08_findArtistName_test)
+add_subdirectory(09_removeArtistbyName_test)
+add_subdirectory(10_deleteArtist_test)
+add_subdirectory(11_deleteaEntry_test)
+add_subdirectory(12_deleteArtistList_test)
+

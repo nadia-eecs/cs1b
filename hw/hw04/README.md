@@ -1,49 +1,89 @@
-# HW04: Classes and Inheritance
+# HW03: Doubly Linked List Using Struct and Pointers (C-style)
 
 ## Firstname Lastname
+
 TODO - Update your name in this readme
 
 ## Problem Statement
 
-In this exercise, you will design various classes and write a program to computerize the billing system of a hospital.
-```
-class personType {
-  public:
-    void print() const;
-    // Function to output the first name and last name
-    // in the form firstName lastName.
+Write a program that will take the Spotify daily artist charts and construct a double linked list that will allow the user to interact with the database by finding entries by artist name and displaying contents of the list that are of interest.
 
-    void setName(string first, string last);
-    // Function to set firstName and lastName according
-    // to the parameters.
-    // Postcondition: firstName = first; lastName = last
+## Struct Organization
+You should have a single header file that declares the following structs that will be used to organize your double linked list:
+```c++
+struct alist {
+  int length;
+  aentry *first;
+  aentry *last;
+};
 
-    string getFirstName() const;
-    // Function to return the first name.
-    // Postcondition: the value of firstName is returned.
+struct aentry {
+  alist *list;
+  aentry *next;
+  aentry *prev;
+  aentry *artist;
+};
 
-    string getLastName() const;
-    // Function to return the last name.
-    // Postcondition: the value of lastName is returned.
-
-    personType(string first = "", string last = "");
-    // Constructor
-    // Sets firstName and lastName according to the parameters.
-    // The default values of the parameters are null strings.
-    // Postcondition: firstName = first; lastName - last
-
-  private:
-    string firstName; // variable to store the first name
-    string lastName;  // variable to store the last name
+struct artist {
+  string artist_id;
+  string artist_name;
+  int total_followers;
+  string genres[AR_SIZE];
+  int popularity
 };
 ```
+## User Interface
+Create a menu for user interface with options for adding/deleting a record to/from the database, searching, and displaying a record or all records on the screen. The menu driven code should be written in your user defined main function in src (separate from the sample driver code given in the main directory of hw03).
 
-## Class Organization
+Menu - Select:
+1. Add a record
+ * a.) Add a record to the beginning of the list
+ * b.) Add a record to the end of the list
+ * c.) Add an artist record before another artist record
+ * d.) Add an artist record after another artist record
+2. Delete a record
+ * a.) Delete the first artist in the record
+ * b.) Delete the last artist in the record
+ * b.) Select a record to delete using artist_name
+3. Display database contents on the screen
+ * a.) Select record to display using artist_name
+ * b.) Display all records
+4. Save and Exit
 
-Design the class `doctorType`, inherited from the class `personType`, defined above, with an additional data member to store a doctor's speciality. Add appropriate constructors and member functions to initialize, access, and manipulate the data members.
+## EXTRA CREDIT: CSV File Read/Write Using C++
+Use the following format for the input/outputfile (Note that data follows after first row which contains headings for the `csv`):
+```
+artist_id, artist_name, total_followers, genres, popularity
+0du5cEVh5yTK9QJze8zA0C, Bruno Mars, 43236735, ['dance pop', 'pop'], 87
+4IWBUUAFIplrNtaOHcJPRM, James Arthur, 10293374, ['pop', 'talent show', 'uk pop'], 80
+69GGBxA162lTqCwzJG5jLp, The Chainsmokers, 19465938, ['dance pop', 'edm', 'electropop', 'pop', 'pop dance', 'tropical house'], 80
+```
+For more information on how to manage CSV refer to this article from [geeksforgeeks](https://www.geeksforgeeks.org/csv-file-management-using-c/).
 
-Design the class `billType` with data members to store a patient's ID and a patient's hospital charges, such as pharmacy charges for medicine, doctor's fee, and room charges. Add appropriate constructors and member functions to initialize, access, and manipulate the data members.
+## Note
+In order to receive full credit for this homework assignment, you must complete:
 
-Design the class `patientType`, inherited from the class `personType`, defined in Chapter 10, with additional data members to store a patient's ID, age, date of birth, attending physician's name, the date when the patient was admitted in the hospital, and the date when the patient was discharged from the hospital. (Use the class `dateType` to store the date of birth, admit date, discharge date, and the class `doctorType` to store the attending physician's name.) Add appropriate constructors and member functions to initialize, access, and manipulate the data members.
+ - `artist.cpp`
+ - `artistList.cpp`
+ - `Makefile`
+ - `main_menu.cpp`
+ - `hw03.scr`: script file showing valgrind on your executable code without memory leaks or errors.
 
-Write a program to test your classes.
+While a `main.cpp` is provided to you in the `hw03` directory, this main function serves as a driver for you to quickly evaluate your code functions. This driver code is different than the menu driven code that is expected in the user interface section and should be expressed in your `main_menu.cpp`. Please work out of the directory `src`.
+
+- Make sure your last push is before the deadline. Your last push will be considered as your final submission.
+
+- It is recommended that you add your name to your `README.MD`
+
+## Script Generation
+Use the command `script` to capture your interaction compiling and running the program `main_menu.cpp` and its dependencies: 
+
+`script hw03.scr`
+
+`make all`
+
+`valgrind ./hw03`
+
+`exit`
+
+Save all files into `hw03/src`

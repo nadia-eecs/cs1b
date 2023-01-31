@@ -1,0 +1,26 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: configure
+      run: chmod u+x configure;./configure
+    - name: cmake
+      run: |
+       cmake -S . -B build
+       cd build && make
+       ./tests/00_distance_test/00_runHW01DistanceTest
+       ./tests/01_radius_test/01_runHW01RadiusTest
+       ./tests/02_circumference_test/02_runHW01CircumferenceTest
+       ./tests/03_area_test/03_runHW01AreaTest
+       

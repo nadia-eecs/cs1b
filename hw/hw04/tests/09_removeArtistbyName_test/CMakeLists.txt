@@ -1,0 +1,4 @@
+include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+
+add_executable(09_runHW04removeArtistbyNameTest removeArtistbyName_test.cpp)
+target_link_libraries(09_runHW04removeArtistbyNameTest hw04_library gtest gtest_main)
