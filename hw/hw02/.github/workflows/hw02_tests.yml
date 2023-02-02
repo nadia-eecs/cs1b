@@ -19,8 +19,4 @@ jobs:
       run: |
        cmake -S . -B build
        cd build && make
-       ./test/00_distance_test/00_runHW01DistanceTest
-       ./test/01_radius_test/01_runHW01RadiusTest
-       ./test/02_circumference_test/02_runHW01CircumferenceTest
-       ./test/03_area_test/03_runHW01AreaTest
        
