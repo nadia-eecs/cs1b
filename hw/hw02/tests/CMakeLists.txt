@@ -1,0 +1,12 @@
+project(hw01_tests)
+
+add_subdirectory(lib/gtest-1.7.0)
+add_subdirectory(00_generateNum_test)
+add_subdirectory(01_doubleNum_test)
+add_subdirectory(02_reverseDigit_test)
+add_subdirectory(03_sumDigits_test)
+add_subdirectory(04_raisePow2_3_4_test)
+add_subdirectory(05_raiseFirstDigitPowSecondDigit_test)
+add_subdirectory(06_raiseFirstAndSecondDigitPowThirdDigit_test)
+add_subdirectory(07_isPrime_test)
+add_subdirectory(08_addTen_test)
