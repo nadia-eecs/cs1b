@@ -58,6 +58,130 @@ While in the `src` directory, use the command `script` followed by the name of t
 
 `exit`
 
+## Sample Run
+'''
+The two digit number is: 24
+1: Enter 1 to double the number.
+2: Enter 2 to reverse the digits of the number.
+3: Enter 3 to raise the number to the power of 2, 3, or 4.
+4: Enter 4 to sum the digits of the number.
+5: Enter 5 to raise the first digit to the power of the second digit.
+6: Enter 6 to raise the first two digits the power of the last digit.
+9: Enter 9 to terminate the program.
+1
+48 is not prime.
+1: Enter 1 to double the number.
+2: Enter 2 to reverse the digits of the number.
+3: Enter 3 to raise the number to the power of 2, 3, or 4.
+4: Enter 4 to sum the digits of the number.
+5: Enter 5 to raise the first digit to the power of the second digit.
+6: Enter 6 to raise the first two digits the power of the last digit.
+9: Enter 9 to terminate the program.
+3
+
+Enter power (2, 3, or 4): 2
+
+2304 is not prime.
+1: Enter 1 to double the number.
+2: Enter 2 to reverse the digits of the number.
+3: Enter 3 to raise the number to the power of 2, 3, or 4.
+4: Enter 4 to sum the digits of the number.
+5: Enter 5 to raise the first digit to the power of the second digit.
+6: Enter 6 to raise the first two digits the power of the last digit.
+9: Enter 9 to terminate the program.
+2
+
+4032 is not prime.
+1: Enter 1 to double the number.
+2: Enter 2 to reverse the digits of the number.
+3: Enter 3 to raise the number to the power of 2, 3, or 4.
+4: Enter 4 to sum the digits of the number.
+5: Enter 5 to raise the first digit to the power of the second digit.
+6: Enter 6 to raise the first two digits the power of the last digit.
+9: Enter 9 to terminate the program.
+4
+
+9 is not prime.
+1: Enter 1 to double the number.
+2: Enter 2 to reverse the digits of the number.
+3: Enter 3 to raise the number to the power of 2, 3, or 4.
+4: Enter 4 to sum the digits of the number.
+5: Enter 5 to raise the first digit to the power of the second digit.
+6: Enter 6 to raise the first two digits the power of the last digit.
+9: Enter 9 to terminate the program.
+1
+
+38 is not prime.
+1: Enter 1 to double the number.
+2: Enter 2 to reverse the digits of the number.
+3: Enter 3 to raise the number to the power of 2, 3, or 4.
+4: Enter 4 to sum the digits of the number.
+5: Enter 5 to raise the first digit to the power of the second digit.
+6: Enter 6 to raise the first two digits the power of the last digit.
+9: Enter 9 to terminate the program.
+5
+
+6561 is not prime.
+1: Enter 1 to double the number.
+2: Enter 2 to reverse the digits of the number.
+3: Enter 3 to raise the number to the power of 2, 3, or 4.
+4: Enter 4 to sum the digits of the number.
+5: Enter 5 to raise the first digit to the power of the second digit.
+6: Enter 6 to raise the first two digits the power of the last digit.
+9: Enter 9 to terminate the program.
+4
+
+18 is not prime.
+1: Enter 1 to double the number.
+2: Enter 2 to reverse the digits of the number.
+3: Enter 3 to raise the number to the power of 2, 3, or 4.
+4: Enter 4 to sum the digits of the number.
+5: Enter 5 to raise the first digit to the power of the second digit.
+6: Enter 6 to raise the first two digits the power of the last digit.
+9: Enter 9 to terminate the program.
+1
+
+36 is not prime.
+1: Enter 1 to double the number.
+2: Enter 2 to reverse the digits of the number.
+3: Enter 3 to raise the number to the power of 2, 3, or 4.
+4: Enter 4 to sum the digits of the number.
+5: Enter 5 to raise the first digit to the power of the second digit.
+6: Enter 6 to raise the first two digits the power of the last digit.
+9: Enter 9 to terminate the program.
+1
+
+72 is not prime.
+1: Enter 1 to double the number.
+2: Enter 2 to reverse the digits of the number.
+3: Enter 3 to raise the number to the power of 2, 3, or 4.
+4: Enter 4 to sum the digits of the number.
+5: Enter 5 to raise the first digit to the power of the second digit.
+6: Enter 6 to raise the first two digits the power of the last digit.
+9: Enter 9 to terminate the program.
+1
+
+144 is not prime.
+1: Enter 1 to double the number.
+2: Enter 2 to reverse the digits of the number.
+3: Enter 3 to raise the number to the power of 2, 3, or 4.
+4: Enter 4 to sum the digits of the number.
+5: Enter 5 to raise the first digit to the power of the second digit.
+6: Enter 6 to raise the first two digits the power of the last digit.
+9: Enter 9 to terminate the program.
+6
+
+38416 is not prime.
+1: Enter 1 to double the number.
+2: Enter 2 to reverse the digits of the number.
+3: Enter 3 to raise the number to the power of 2, 3, or 4.
+4: Enter 4 to sum the digits of the number.
+5: Enter 5 to raise the first digit to the power of the second digit.
+6: Enter 6 to raise the first two digits the power of the last digit.
+9: Enter 9 to terminate the program.
+9
+'''
+
 ## NOTE
 - It is required that you add your name and github actions workflow badge to your readme.
 - Check the logs from github actions to verify the correctness of your program.
