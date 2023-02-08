@@ -59,7 +59,7 @@ While in the `src` directory, use the command `script` followed by the name of t
 `exit`
 
 ## Sample Run
-'''
+```
 The two digit number is: 24
 1: Enter 1 to double the number.
 2: Enter 2 to reverse the digits of the number.
@@ -180,7 +180,7 @@ Enter power (2, 3, or 4): 2
 6: Enter 6 to raise the first two digits the power of the last digit.
 9: Enter 9 to terminate the program.
 9
-'''
+```
 
 ## NOTE
 - It is required that you add your name and github actions workflow badge to your readme.
