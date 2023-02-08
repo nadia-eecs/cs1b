@@ -19,4 +19,13 @@ jobs:
       run: |
        cmake -S . -B build
        cd build && make
+       ./tests/00_generateNum_test/00_runHW02GenerateNumTest
+       ./tests/01_doubleNum_test/01_runHW02DoubleNumTest
+       ./tests/02_reverseDigit_test/02_runHW02ReverseDigitTest
+       ./tests/03_sumDigits_test/03_runHW02SumDigitsTest
+       ./tests/04_raisePow2_3_4_test/04_runHW02RaisePow234Test
+       ./tests/05_raiseFirstDigitPowSecondDigit_test/05_runHW02RaiseFirstDigitPowSecondDigitTest
+       ./tests/06_raiseFirstAndSecondDigitPowThirdDigit_test/06_runHW02RaiseFirstAndSecondDigitPowThirdDigitTest
+       ./tests/07_isPrime_test/07_runHW02IsPrimeTest
+       ./tests/08_addTen_test/08_runHW02AddTenTest
        

@@ -18,6 +18,6 @@ add_executable(hw02_run ${SOURCE_FILES})
 include_directories(src)
 
 add_subdirectory(src)
-add_subdirectory(test)
+add_subdirectory(tests)
 
 target_link_libraries(hw02_run hw02_library)

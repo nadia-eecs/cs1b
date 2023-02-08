@@ -1,4 +1,4 @@
-project(hw01_tests)
+project(hw02_tests)
 
 add_subdirectory(lib/gtest-1.7.0)
 add_subdirectory(00_generateNum_test)
