@@ -4,7 +4,7 @@
 
 TODO - Update your name in this readme
 
-TODO - Add a badge from travis CI here
+TODO - Add a badge from github actions here
 
 ## Problem Statement
 
@@ -94,33 +94,38 @@ You are responsible for the following function definitions in `matrix.cpp`:
 
 You may predefine `AR_CAP` with a size of 50 to statically allocate memory to the 2D matrix initially. Note that the resultant matrix to the `matrixMultiplication` function must be initialized to zero prior to the function call. 
 
+## To Submit
+- `matrix.cpp`: your functions file
+- `matrix.h`: the header to your functions file
+- `hw03.cpp`: your customized main function/driver code
+- `Makefile`: with proper commands
+- `hw03.scr`: script file showing how your code functions in the context of your main function
+
 ## Script Generation
 Use the command `script` to capture your interaction compiling and running the program, including all operations, as shown below:
 
-`script hw02.scr`
+`script hw03.scr`
 
 `date`
-
-`ls -l`
 
 `make all`
 
 `ls -l`
 
-`./hw02`
+`./hw03`
+
+`make clean`
 
 `exit`
 
-`make tar`
-
-Save all files into the `hw02/src`.
+Save all files into the `hw03/src`.
 
 ## NOTE
-- It is required that you add your name and Travis CI badge to your readme.
+- It is required that you add your name and github actions badge to your readme.
 - Check the logs from Travis to verify the correctness of your program.
 - The Initial code will not necessarily compile. You will have to write the necessary code.
 - Commit all changes as you develop the code in your individual private repo. Please provide descriptive commit messages and push from local to your repository. If you do not stage, commit, and push git classroom will not receive your code at all.
 - Make sure your last push is before the deadline. Your last push will be considered as your final submission.
 - There is no partial credit for code that does not compile.
-- If you need to be considered for partial grade for any reason(failing tests on travis,etc). Then message the staff on canvas before the deadline. Late email requests may not be considered.
+- If you need to be considered for partial grade for any reason(failing tests on github actions,etc). Then message the staff on canvas before the deadline. Late email requests may not be considered.
 

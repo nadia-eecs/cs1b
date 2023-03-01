@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhw03_library.a CMakeFiles/hw03_library.dir/matrix.cpp.o
+/usr/bin/ranlib libhw03_library.a

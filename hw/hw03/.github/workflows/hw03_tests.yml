@@ -19,8 +19,9 @@ jobs:
       run: |
        cmake -S . -B build
        cd build && make
-       ./tests/00_distance_test/00_runHW01DistanceTest
-       ./tests/01_radius_test/01_runHW01RadiusTest
-       ./tests/02_circumference_test/02_runHW01CircumferenceTest
-       ./tests/03_area_test/03_runHW01AreaTest
-       
+       ./tests/00_fileIO_test/00_runHW03fileIOTest
+       ./tests/01_matrixAddition_test/01_runHW03matrixAdditionTest
+       ./tests/02_matrixSubtraction_test/02_runHW03matrixSubtractionTest
+       ./tests/03_matrixMultiplication_test/03_runHW03matrixMultiplicationTest
+       ./tests/04_matrixTranspose_test/04_runHW03matrixTransposeTest
+       ./tests/05_matrixDeterminant_test/05_runHW03matrixDeterminantTest
