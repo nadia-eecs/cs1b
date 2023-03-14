@@ -69,9 +69,9 @@ In order to receive full credit for this homework assignment, you must complete:
  - `artistList.cpp`
  - `Makefile`
  - `main_menu.cpp`
- - `hw03.scr`: script file showing valgrind on your executable code without memory leaks or errors.
+ - `hw04.scr`: script file showing valgrind on your executable code without memory leaks or errors.
 
-While a `main.cpp` is provided to you in the `hw03` directory, this main function serves as a driver for you to quickly evaluate your code functions. This driver code is different than the menu driven code that is expected in the user interface section and should be expressed in your `main_menu.cpp`. Please work out of the directory `src`.
+While a `main.cpp` is provided to you in the `hw04` directory, this main function serves as a driver for you to quickly evaluate your code functions. This driver code is different than the menu driven code that is expected in the user interface section and should be expressed in your `main_menu.cpp`. Please work out of the directory `src`.
 
 - Make sure your last push is before the deadline. Your last push will be considered as your final submission.
 
@@ -80,12 +80,12 @@ While a `main.cpp` is provided to you in the `hw03` directory, this main functio
 ## Script Generation
 Use the command `script` to capture your interaction compiling and running the program `main_menu.cpp` and its dependencies: 
 
-`script hw03.scr`
+`script hw04.scr`
 
 `make all`
 
-`valgrind ./hw03`
+`valgrind ./hw04`
 
 `exit`
 
-Save all files into `hw03/src`
+Save all files into `hw04/src`
