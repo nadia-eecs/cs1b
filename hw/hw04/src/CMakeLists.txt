@@ -13,6 +13,6 @@ set(HEADER_FILES artist.h artistList.h)
 
 set(SOURCE_FILES artist.cpp artistList.cpp)
 
-add_library(hw03_library ${SOURCE_FILES} ${HEADER_FILES})
+add_library(hw04_library ${SOURCE_FILES} ${HEADER_FILES})
 
-set_target_properties(hw03_library PROPERTIES LINKER_LANGUAGE CXX)
+set_target_properties(hw04_library PROPERTIES LINKER_LANGUAGE CXX)

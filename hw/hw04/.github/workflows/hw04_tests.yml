@@ -1,0 +1,34 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: configure
+      run: chmod u+x configure;./configure
+    - name: cmake
+      run: |
+       cmake -S . -B build
+       cd build && make
+       ./tests/00_artist_test/00_runHW04ArtistTest
+       ./tests/01_emptyArtistList_test/01_runHW04EmptyArtistListTest
+       ./tests/02_aEntry_test/02_runHW04aEntryTest
+       ./tests/03_prependArtist_test/03_runHW04PrependArtistTest
+       ./tests/04_appendArtist_test/04_runHW04AppendArtistTest
+       ./tests/05_insertArtist_test/05_runHW04insertArtistTest
+       ./tests/06_removeFirstArtist_test/06_runHW04removeFirstArtistTest
+       ./tests/07_removeLastArtist_test/07_runHW04removeLastArtistTest
+       ./tests/08_findArtistName_test/08_runHW04findArtistbyNameTest
+       ./tests/09_removeArtistbyName_test/09_runHW04removeArtistbyNameTest
+       ./tests/10_deleteArtist_test/10_runHW04DeleteArtistTest
+       ./tests/11_deleteaEntry_test/11_runHW04DeleteAEntryTest
+       ./tests/12_deleteArtistList_test/12_runHW04DeleteArtistListTest
