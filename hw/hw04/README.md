@@ -1,8 +1,9 @@
-# HW03: Doubly Linked List Using Struct and Pointers (C-style)
+# HW04: Doubly Linked List Using Struct and Pointers (C-style)
 
 ## Firstname Lastname
 
-TODO - Update your name in this readme
+TODO - Update your name in this readme.
+TODO - Add your github actions badge here.
 
 ## Problem Statement
 
