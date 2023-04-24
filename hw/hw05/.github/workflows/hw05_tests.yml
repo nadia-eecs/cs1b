@@ -7,15 +7,39 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  test:
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
+
     - name: configure
       run: chmod u+x configure;./configure
-    - name: cmake
-      run: |
+
+    - name: Build code using cmake
+      run:
        cmake -S . -B build
        cd build && make
+
+    - name: Run 00_constructor_tests
+      run:
+        ./tests/00_constructor_tests/00_runHW05ConstructorTest
+
+    - name: Run 01_billType_tests
+      run: 
+        ./tests/01_billType_tests/01_runHW05BillTypeTest
+
+    - name: Run 02_dateType_tests
+      run:
+        ./tests/02_dateType_tests/02_runHW05DateTypeTest
+
+    - name: Run 03_doctorType_tests
+      run:
+        ./tests/03_doctorType_tests/03_runHW05DoctorTypeTest
+
+    - name: Run 04_patientType_tests
+      run:
+        ./tests/04_patientType_tests/04_runHW05PatientTypeTest
+
