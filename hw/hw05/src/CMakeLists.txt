@@ -14,6 +14,6 @@ set(HEADER_FILES billType.h dateType.h patientType.h doctorType.h personType.h)
 
 set(SOURCE_FILES billType.cpp dateType.cpp patientType.cpp doctorType.cpp personType.cpp)
 
-add_library(hw05_library ${SOURCE_FILES} ${HEADER_FILES})
+add_library(hw05_library STATIC ${SOURCE_FILES} ${HEADER_FILES})
 
 set_target_properties(hw05_library PROPERTIES LINKER_LANGUAGE CXX)

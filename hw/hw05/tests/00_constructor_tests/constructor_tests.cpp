@@ -1,5 +1,8 @@
 #include "gtest/gtest.h"
 #include "billType.h"
+#include "patientType.h"
+#include "dateType.h"
+#include "doctorType.h"
 
 using namespace std;
 
@@ -18,7 +21,6 @@ TEST(hw05TestbillType, basicConstructorbillType) {
   cout << "\nCurrent POINTS:" << currentPoints_constructorTest << "/" << maxPoints << endl;
   delete bill;
   bill = nullptr;
-
 }
 
 TEST(hw05TestdateType, basicConstructordateType) {

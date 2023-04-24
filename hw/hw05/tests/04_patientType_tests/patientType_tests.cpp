@@ -18,7 +18,7 @@ TEST(hw05TestsetInfo, setInfoTest) {
   EXPECT_EQ(patient->getDoctorSpl(), "Urology");
   EXPECT_EQ(patient->getAdmDay(), 24);
   EXPECT_EQ(patient->getAdmMonth(), 10);
-  EXPECT_EQ(patient->getYear(), 2022);
+  EXPECT_EQ(patient->getAdmYear(), 2022);
 
   if (HasFailure()) {
     cerr << "\nsetInfoTest has failed\"" << endl;
@@ -52,7 +52,7 @@ TEST(hw05TestsetDoctorName, setDoctorNameTest) {
   
   patient->setDoctorName("Charlie", "Brown");
   EXPECT_EQ(patient->getDoctorFName(), "Charlie");
-  EXPECT_EQ(patient->getDoctorLName(), "Brown);
+  EXPECT_EQ(patient->getDoctorLName(), "Brown");
 
 
   if (HasFailure()) {
@@ -82,7 +82,7 @@ TEST(hw05setDoctorSpl, setDoctorSplTest) {
 
 TEST(hw05setAdmDate, setAdmDateTest) {
   patientType *patient = new patientType("4677", "Thomas", "William", 7, 29, 2023, "Puja", "Singh", "Neonatal", 12, 14, 2023, 12, 15, 2023);
-  patient->setAdmDate(24, 3, 2022);
+  patient->setAdmDate(3, 24, 2022);
   EXPECT_EQ(patient->getAdmDay(), 24);
   EXPECT_EQ(patient->getAdmMonth(), 3);
   EXPECT_EQ(patient->getAdmYear(), 2022);
@@ -100,8 +100,8 @@ TEST(hw05setAdmDate, setAdmDateTest) {
 TEST(hw05setDisDate, setDisDateTest) {
   patientType *patient = new patientType("4677", "Thomas", "William", 7, 29, 2023, "Puja", "Singh", "Neonatal", 12, 14, 2023, 12, 15, 2023);
   patient->setDisDate(4, 1, 2021);
-  EXPECT_EQ(patient->getDisDay(), 4);
-  EXPECT_EQ(patient->getDisMonth(), 1);
+  EXPECT_EQ(patient->getDisDay(), 1);
+  EXPECT_EQ(patient->getDisMonth(), 4);
   EXPECT_EQ(patient->getDisYear(), 2021);
 
   if (HasFailure()) {
