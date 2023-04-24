@@ -42,11 +42,11 @@ class personType {
 ## Class Organization
 Please refer to the UML diagrams of the classes provided. Make sure that you name each member function and data attribute with the signatures indicated in the diagram for your test cases to run in order to receive full credit.
 
-[doctorType and patientType UML](uml_diagrams/personType_uml.png)
+![doctorType and patientType UML](uml_diagrams/personType_uml.png)
 
 Design the class `doctorType`, inherited from the class `personType`, defined above, with an additional data member to store a doctor's speciality. Add appropriate constructors and member functions (see UML diagram) to initialize, access, and manipulate the data members.
 
-[billType and dateType UML](uml_diagrams/billType_dateType_uml.png)
+![billType and dateType UML](uml_diagrams/billType_dateType_uml.png)
 
 Design the class `billType` with data members to store a patient's ID and a patient's hospital charges, such as pharmacy charges for medicine, doctor's fee, and room charges. Add appropriate constructors and member functions (see UML diagram) to initialize, access, and manipulate the data members.
 
